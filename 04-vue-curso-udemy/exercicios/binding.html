@@ -11,12 +11,18 @@
         <p>{{link}}</p>
         <p><a href="{{link}}">Canal ?</a></p>
         <p><a v-bind:href="link">Canal</a></p>
+        <p><a :href="link">Canal</a></p>
 
+        <p>
+            <input type="text" v-model="nome"><br>
+            <span>{{nome}}</span>>
+        </p>
     </div>
     <script>
         new Vue({
             el: "#app",
             data: {
+                nome: "Anne",
                 link: "https://youtube.com/cod3rcursos"
             }
         })
